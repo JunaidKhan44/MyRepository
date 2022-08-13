@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DirectChat"
+    android:layout_marginTop="30dp"
+    >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardBackgroundColor="@color/teal_700"
+                app:cardCornerRadius="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/f"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="18dp">
+
+                        <Spinner
+                            android:id="@+id/spinnerCountries"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+
+
+                            />
+
+                        <EditText
+                            android:id="@+id/editTextPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:inputType="number"
+                            android:digits="@string/lblDigit"
+                            android:imeOptions="actionGo"
+                            android:hint="@string/lblEntryNum"
+                            android:maxLength="10"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_below="@+id/f"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/white">
+
+                        <EditText
+                            android:id="@+id/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="18dp"
+                            android:background="@null"
+                            android:hint="Type Message"
+                            android:inputType="textMultiLine"
+                            android:overScrollMode="always"
+                            android:padding="6dp"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:textAlignment="textStart"
+                            android:gravity="start" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/white"
+                android:hint="@string/btnSendMsg"
+                android:text="@string/btnSendMsg"
+                android:textColor="@color/teal_700"
+                android:textSize="16dp"></Button>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

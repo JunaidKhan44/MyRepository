@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ImageAndVideo"
+    android:background="@color/Teal">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/custom_card2"
+        android:layout_margin="4dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblAdLoading"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:id="@+id/loadads"
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@+id/loadads"
+            android:layout_centerInParent="true"
+            android:id="@+id/prograssbar"/>
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/native_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_gravity="left"
+        android:layout_margin="5dp"
+        android:src="@drawable/backicon"
+        android:background="@color/Teal"
+        android:id="@+id/goback"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayoutdownloadstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Teal"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/darker_gray">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/image_undownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblDownloadImg"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/video_undownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblDownloadVideo" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_marginTop="-50dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/teal_700"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:id="@+id/banner_container"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

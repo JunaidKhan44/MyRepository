@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Teal"
+    android:orientation="vertical"
+    tools:context=".activities.HomeScreen">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/lblAppTitle"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textFontWeight="90"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <ScrollView
+        android:paddingBottom="10dp"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner_container"
+        android:layout_below="@id/title"
+        android:background="@color/Teal"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Teal"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Teal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                tools:ignore="NotSibling">
+
+                <!--direct chat-->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    app:cardBackgroundColor="@color/Teal"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:strokeColor="@color/strokeColor"
+                    app:strokeWidth="4dp"
+                    app:cardCornerRadius="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="20dp"
+                        android:src="@drawable/whatsappicon" />
+
+                    <TextView
+                        android:id="@+id/whatclonetxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="20dp"
+                        android:lines="1"
+                        android:text="@string/lblDirectChat"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/createaccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/whatclonetxt"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="55dp"
+                        android:text="@string/lblCreateMultipleAccount"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/createaccount"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="67dp"
+                        android:text="@string/lblAccount"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Teal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <!--Qr Scanner-->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    app:cardBackgroundColor="@color/Teal"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:strokeColor="@color/strokeColor"
+                    app:strokeWidth="4dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="20dp"
+                        android:src="@drawable/scan2" />
+
+                    <TextView
+                        android:id="@+id/Statusaver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="20dp"
+                        android:lines="1"
+                        android:text="@string/lblAccountWhatsScanner"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/download"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Statusaver"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="55dp"
+                        android:text="@string/lblOpenWhatsappAccount"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/download"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="67dp"
+                        android:text="@string/lblInYourPhone"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+                <!--Status Saver-->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    app:cardBackgroundColor="@color/Teal"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:strokeColor="@color/strokeColor"
+                    app:strokeWidth="4dp"
+                    app:cardCornerRadius="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="20dp"
+                        android:src="@drawable/statussavericon" />
+
+                    <TextView
+                        android:id="@+id/Savedstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="20dp"
+                        android:lines="1"
+                        android:text="@string/lblStatusSSaver"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/watch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Savedstatus"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="55dp"
+                        android:text="@string/lblDownloadWhatsApp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/watch"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="67dp"
+                        android:text="@string/lblStatusPhone"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.card.MaterialCardView>
+                <!--Saved Status-->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/linearLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout7"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    app:cardBackgroundColor="@color/Teal"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:strokeColor="@color/strokeColor"
+                    app:strokeWidth="4dp"
+                    app:cardCornerRadius="10dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="20dp"
+                        android:src="@drawable/downloadicon" />
+
+                    <TextView
+                        android:id="@+id/sharestatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="20dp"
+                        android:lines="1"
+                        android:text="@string/lblSavedStatustxt"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/watchstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Savedstatus"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="55dp"
+                        android:text="@string/lblWatchSaved"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/watch"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="67dp"
+                        android:text="@string/lblInternettxt"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+
+
+</RelativeLayout>

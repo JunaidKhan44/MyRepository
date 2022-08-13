@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Whats Cloner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="lblAppTitle">WhatsCloner</string>
+    <string name="lblAppSubTitle">Download and  View Status</string>
+    <string name="lblAdLoading">Ads is loading</string>
+    <string name="lblDirectChat">Direct Chat</string>
+    <string name="lblOpenWhatsappAccount">Open any Whatsapp Account</string>
+    <string name="lblCreateMultipleAccount">Create Multiple WhatsApp</string>
+    <string name="lblAccountWhatsScanner">Whats Web Scanner</string>
+    <string name="lblStatusSaver">Saved Status</string>
+    <string name="lblSavedStatus">Watch your saved status,even</string>
+    <string name="lblWithoutInternet">without internet.</string>
+    <string name="lblInYourPhone">in your phone.</string>
+    <string name="lblDownloadWhatsApp">Download any WhatsApp</string>
+    <string name="lblStatusPhone">Status on your phone.</string>
+    <string name="lblSavedStatustxt">Saved Status</string>
+    <string name="lblWatchSaved">Watch your saved status,even</string>
+    <string name="lblInternettxt">without internet.</string>
+    <string name="lblAccount">Account</string>
+    <string name="lblImage">Images</string>
+    <string name="lblVideo">Videos</string>
+    <string name="lblDownloadImg">Download Images</string>
+    <string name="lblDownloadVideo">Download Videos</string>
+    <string name="lblQRScanner">QR Scanner</string>
+    <string name="lblStatus">Status</string>
+    <string name="lblexit">Exit</string>
+    <string name="lblErrorMsg">Valid number is required</string>
+    <string name="lblErrorMsgEmp">Text cannot be empty</string>
+    <string name="lblDigit">0123456789</string>
+    <string name="lblEntryNum">Enter your number</string>
+    <string name="btnSendMsg">Send Message</string>
+    <string name="lblStatusSSaver">Status Saver</string>
+
+
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="FbInterstitialAd">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="FbBannerAd">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="FbNativeAd">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="lblSure">Are you sure. Do you want to exit?</string>
+    <string name="lblYes">Yes</string>
+    <string name="lblNo">No</string>
+
+
+</resources>

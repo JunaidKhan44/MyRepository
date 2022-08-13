@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable-v24/ic_logo.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/bottom_round.xml" value="0.1265" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/cancel.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/circlebackgroundpink.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/cloud2.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/custom_button.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/custom_card2.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/custom_card3.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/custum_card.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/directchat.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/directchat2.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/download.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/download2.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/hot.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/ic_baseline_bubble_chart_24.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/ic_baseline_notifications_active_24.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/person.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/play.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/refresh.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/round_button.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/rounded.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/rounded_install.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/roundedbutton.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/scan.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/scanner2.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/selector.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/share.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/showall.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/statussaver.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/drawable/whatsweb.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/activity_ads_one.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/activity_direct_chat.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/activity_exit.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/activity_get_started.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/activity_home_screen.xml" value="0.22" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/activity_imageandvideo.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/activity_scanner.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/activity_status_downloader.xml" value="0.1140625" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/activity_view_status.xml" value="0.1" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/alert_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/bottom_style_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/card_row.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/content_main2.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/fb_adlayout.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/fragment_image.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/fragment_undownload_image.xml" value="0.1140625" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/fragment_undownload_video.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/fragment_video.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/gallery_card_row.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/mycard.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/layout/smalladlayout.xml" value="0.20416666666666666" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/menu/menu_common.xml" value="0.10364583333333334" />
+        <entry key="..\:/FunPrime/Webproject/app/src/main/res/menu/menu_navg.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

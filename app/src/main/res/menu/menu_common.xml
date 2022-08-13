@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/mdirect"
+        android:title="@string/lblDirectChat"
+        app:showAsAction="never"/>
+
+
+    <item android:id="@+id/mscanner"
+        android:title="@string/lblQRScanner"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/mstatus"
+        android:title="@string/lblStatus"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/exit"
+        android:title="@string/lblexit"
+        app:showAsAction="never"/>
+
+
+</menu>

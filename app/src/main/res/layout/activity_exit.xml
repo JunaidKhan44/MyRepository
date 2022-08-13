@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.ExitActivity"
+        android:background="@color/Teal">
+
+    <RelativeLayout
+        android:id="@+id/na"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_card2">
+
+        <TextView
+            android:id="@+id/loadads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/lblAdLoading"
+            android:textColor="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/prograssbar"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/loadads"
+            android:layout_centerInParent="true" />
+
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/native_ad_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/na"
+        android:layout_marginTop="20dp"
+        android:text="@string/lblSure"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/txt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/custum_card"
+            android:gravity="center_horizontal"
+            android:id="@+id/yes"
+            android:text="@string/lblYes"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/teal_700"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/custum_card"
+            android:gravity="center_horizontal"
+            android:id="@+id/no"
+            android:text="@string/lblNo"
+            app:backgroundTint="@color/teal_700"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "896633548342",
+    "project_id": "whats-web-eee43",
+    "storage_bucket": "whats-web-eee43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896633548342:android:804fd7aa9a7ab6bad77297",
+        "android_client_info": {
+          "package_name": "com.example.webproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896633548342-i3uh9i7tro54ccnkufdbkpp1ocbhmipf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM8Zm3-tcc9UpaYSOKEIejbwLg70HpNkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896633548342-i3uh9i7tro54ccnkufdbkpp1ocbhmipf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

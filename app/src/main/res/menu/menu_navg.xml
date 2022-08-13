@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/directchat"
+        android:title="Direct Chat"
+        android:icon="@drawable/directchat"
+        />
+    <item android:id="@+id/status"
+        android:title="Status Saver"
+        android:icon="@drawable/statussaver"
+        />
+    <item android:id="@+id/scan"
+        android:title="Scanner"
+        android:icon="@drawable/scan2"
+        />
+
+
+</menu>
