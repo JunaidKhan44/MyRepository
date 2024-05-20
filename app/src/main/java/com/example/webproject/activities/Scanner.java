@@ -41,15 +41,10 @@ public class Scanner extends AppCompatActivity {
             webView = (WebView) findViewById(R.id.webview);
             webView.loadUrl(Constant.WHATSWEB_URL);
             webView.getSettings().setJavaScriptEnabled(true);
-
-
-
-            // Add a WebViewClient
             webView.setWebViewClient(new WebViewClient() {
 
                 @Override
                 public void onPageFinished(WebView view, String url) {
-                    // Inject CSS when page is done loading
                     injectCSS();
                     super.onPageFinished(view, url);
                 }
