@@ -54,14 +54,13 @@ public class DirectChat extends AppCompatActivity {
 
     }
 
-    //main menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_common, menu);
         return true;
     }
 
-    //main menu click
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
