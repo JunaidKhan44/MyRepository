@@ -30,7 +30,7 @@ public class ImageAndVideo extends AppCompatActivity  implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imageandvideo);
 
-        //initialize
+
         initializeView();
         setAdapterViewPager();
         goback.setOnClickListener(this::onClick);
