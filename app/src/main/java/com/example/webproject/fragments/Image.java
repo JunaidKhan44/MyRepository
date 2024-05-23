@@ -60,12 +60,7 @@ public class Image extends Fragment {
 
             }
         });
-
-
-        //end initialize
-
         setUpRecyclerView();
-       // return inflater.inflate(R.layout.fragment_image, container, false);
     return  view;
     }
 
