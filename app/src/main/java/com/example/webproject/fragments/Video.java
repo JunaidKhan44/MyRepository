@@ -37,14 +37,12 @@ public class Video extends Fragment {
     private SwipeRefreshLayout recyclerLayout;
     private final String KEY_RECYCLER_STATE = "recycler_state";
     private static Bundle mBundleRecyclerViewState;
-    //   private InterstitialAd mInterstitialAd;
     Parcelable listState;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         final  View view=inflater.inflate(R.layout.fragment_video, container, false);
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view1);
         recyclerLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipeRecyclerView1);
@@ -131,7 +129,6 @@ public class Video extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        // restore RecyclerView state
         if (mBundleRecyclerViewState != null) {
             Parcelable listState = mBundleRecyclerViewState.getParcelable(KEY_RECYCLER_STATE);
             recyclerView.getLayoutManager().onRestoreInstanceState(listState);
