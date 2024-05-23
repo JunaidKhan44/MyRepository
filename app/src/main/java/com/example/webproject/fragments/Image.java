@@ -42,9 +42,7 @@ public class Image extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         final  View view=inflater.inflate(R.layout.fragment_image, container, false);
-        //start initialize
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         recyclerLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipeRecyclerView);
         recyclerLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -124,7 +122,6 @@ public class Image extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        // restore RecyclerView state
         if (mBundleRecyclerViewState != null) {
             Parcelable listState = mBundleRecyclerViewState.getParcelable(KEY_RECYCLER_STATE);
             recyclerView.getLayoutManager().onRestoreInstanceState(listState);
