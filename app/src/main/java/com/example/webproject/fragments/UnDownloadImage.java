@@ -47,12 +47,10 @@ public class UnDownloadImage extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         final  View view=inflater.inflate(R.layout.fragment_undownload_image, container, false);
         recyclerView=view.findViewById(R.id.recyclerview);
         recyclerLayout=view.findViewById(R.id.swipeRecycleview);
 
-        //video call
         recyclerLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
