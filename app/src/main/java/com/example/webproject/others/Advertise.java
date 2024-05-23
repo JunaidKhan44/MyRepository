@@ -252,8 +252,6 @@ public class Advertise {
 
             adChoicesContainer.removeAllViews();
             adChoicesContainer.addView(adOptionsView, 0);
-
-            // Create native UI using the ad metadata.
             AdIconView nativeAdIcon = adView.findViewById(R.id.native_ad_ic);
             TextView nativeAdTitle = adView.findViewById(R.id.native_ad_ti);
             com.facebook.ads.MediaView nativeAdMedia = adView.findViewById(R.id.native_ad_med);
@@ -261,8 +259,6 @@ public class Advertise {
             TextView nativeAdBody = adView.findViewById(R.id.native_ad_bo);
             TextView sponsoredLabel = adView.findViewById(R.id.native_ad_sponsored_lab);
             Button nativeAdCallToAction = adView.findViewById(R.id.native_ad_call_to_act);
-
-            // Set the Text.
             nativeAdTitle.setText(nativeAd.getAdvertiserName());
             nativeAdBody.setText(nativeAd.getAdBodyText());
             nativeAdSocialContext.setText(nativeAd.getAdSocialContext());
