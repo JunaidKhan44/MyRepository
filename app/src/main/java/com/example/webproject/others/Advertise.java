@@ -135,13 +135,11 @@ public class Advertise {
                 @Override
                 public void onAdLoaded(Ad ad) {
                     nativecondition = true;
-                    //Toast.makeText(activity, "load", Toast.LENGTH_SHORT).show();
                     Log.d("nativead", "onAdLoaded: FB Native ad");
                     if (nativeAd != ad) {
                         nativeAd.unregisterView();
                     }
                     NativeAdLayout nativeAdLayout = activity.findViewById(R.id.native_ad_container);
-                    //   nativeAdLayout.setVisibility(View.VISIBLE);
                     CardView adView = (CardView) LayoutInflater.from(activity).inflate(R.layout.fb_adlayout, nativeAdLayout, false);
                     nativeAdLayout.addView(adView, new LinearLayout.LayoutParams(MATCH_PARENT, WRAP_CONTENT));
                     LinearLayout adChoicesContainer = adView.findViewById(R.id.ad_choices_container);
@@ -163,8 +161,7 @@ public class Advertise {
             e.printStackTrace();
         }
     }
-
-    //smalll  adv
+    
     public static void loadNativeAd(final Activity activity, final Dialog dialog) {
         try {
             AudienceNetworkAds.initialize(activity);
@@ -210,20 +207,13 @@ public class Advertise {
             e.printStackTrace();
         }
     }
-//
+
     public static void inflateAd(NativeAd nativeAd, CardView adView, LinearLayout adChoicesContainer, AdOptionsView adOptionsView) {
         try {
             nativeAd.unregisterView();
-
-            // Add the Ad view into the ad container.
-
-            // Inflate the Ad view.  The layout referenced should be the one you created in the last step.
-
-            // Add the AdOptionsView
             adChoicesContainer.removeAllViews();
             adChoicesContainer.addView(adOptionsView, 0);
 
-            // Create native UI using the ad metadata.
             AdIconView nativeAdIcon = adView.findViewById(R.id.native_ad_icon);
             TextView nativeAdTitle = adView.findViewById(R.id.native_ad_title);
             com.facebook.ads.MediaView nativeAdMedia = adView.findViewById(R.id.native_ad_media);
@@ -232,7 +222,7 @@ public class Advertise {
             TextView sponsoredLabel = adView.findViewById(R.id.native_ad_sponsored_label);
             Button nativeAdCallToAction = adView.findViewById(R.id.native_ad_call_to_action);
 
-            // Set the Text.
+
             nativeAdTitle.setText(nativeAd.getAdvertiserName());
             nativeAdBody.setText(nativeAd.getAdBodyText());
             nativeAdSocialContext.setText(nativeAd.getAdSocialContext());
@@ -240,12 +230,12 @@ public class Advertise {
             nativeAdCallToAction.setText(nativeAd.getAdCallToAction());
             sponsoredLabel.setText(nativeAd.getSponsoredTranslation());
 
-            // Create a list of clickable views
+        
             List<View> clickableViews = new ArrayList<>();
             clickableViews.add(nativeAdTitle);
             clickableViews.add(nativeAdCallToAction);
 
-            // Register the Title and CTA button to listen for clicks.
+            
             nativeAd.registerViewForInteraction(
                     adView,
                     nativeAdMedia,
@@ -255,8 +245,7 @@ public class Advertise {
             e.printStackTrace();
         }
     }
-//
-//
+
     public static void inflateAdsmall(NativeAd nativeAd, CardView adView, LinearLayout adChoicesContainer, AdOptionsView adOptionsView) {
         try {
             nativeAd.unregisterView();
