@@ -90,12 +90,8 @@ public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.StoryViewHol
                             }
                         });
                 Toast.makeText(context, "Saved to: "+ destPath + files.getFilename(), Toast.LENGTH_LONG).show();
-
-
             }
         });
-
-
     }
 
     public void checkFolder() {
