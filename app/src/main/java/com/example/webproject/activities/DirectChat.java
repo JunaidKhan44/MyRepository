@@ -28,9 +28,6 @@ public class DirectChat extends AppCompatActivity {
     private EditText editTextmessage;
     private Button btnSend;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -120,7 +117,5 @@ public class DirectChat extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 }
