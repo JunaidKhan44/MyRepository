@@ -118,8 +118,6 @@ public class ImageAndVideo extends AppCompatActivity  implements View.OnClickLis
 
     }
 
-
-
     private void initializeView(){
         tabLayout = findViewById(R.id.tablayoutdownloadstatus);
         viewPager = findViewById(R.id.viewPager1);
@@ -136,6 +134,5 @@ public class ImageAndVideo extends AppCompatActivity  implements View.OnClickLis
         startActivity(new Intent(ImageAndVideo.this, HomeScreen.class));
         finish();
     }
-
-    }
+ }
 }
